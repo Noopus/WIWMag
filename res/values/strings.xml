@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">WYW Magazine</string>
+    <string name="hello_world">Hello world! Backend as a service (BaaS), also known as "mobile backend as a service" (MBaaS),[1][2][3] is a model for providing web and mobile app developers with a way to link their applications to backend cloud storage and APIs exposed by back end applications while also providing features such as user management, push notifications, and integration with social networking services.[4] These services are provided via the use of custom software development kits (SDKs) and application programming interfaces (APIs). BaaS is a relatively recent development in cloud computing,[5] with most BaaS startups dating from 2011 or later.[6][7][8] Although a fairly nascent industry, trends indicate that these services are gaining mainstream traction with enterprise consumers.[9] The global BaaS market had an estimated value of $216.5 million in 2012 and projected to grow to $7.7 billion by 2017.[10] Examples of consumer backend providers include Parse (acquired by Facebook), Apigee, Backendless, Kii, built.io and Firebase. Enterprise backend providers include Encore.io, Appear, Appcelerator, AnyPresence, Kidozen, Kinvey, and FeedHenry. Syncano is an example of a backend provider that works with both consumer and enterprise clients. Some of the larger technology vendors are also looking into entering the space.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="ranklabel">"Rank : "</string>
+    <string name="countrylabel">"Country : "</string>
+    <string name="populationlabel">"Population : "</string>
+
+</resources>

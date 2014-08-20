@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f26522"
+      >
+      
+    
+    
+    
+
+   <ScrollView
+       
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f26522"
+    
+   
+     >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/backbutt"
+            android:onClick="back" />
+        
+         <com.androidbegin.jsonparsetutorial.Coustxt
+            android:id="@+id/textView2"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#ffffff"
+            android:text="Terms and Conditions"
+            android:gravity="center"
+             android:layout_margin="15dp"
+             android:textSize="20dp"
+             android:textAlignment="center"/>
+
+       <com.androidbegin.jsonparsetutorial.Coustxt
+            android:id="@+id/textView1"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+             android:layout_margin="15dp"
+             android:textAlignment="center"/>
+
+       
+
+       
+        <Button
+           android:id="@+id/imageView2"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:background="@drawable/commsenbutt"
+           android:layout_gravity="center"
+           android:layout_marginTop="25dp"
+           android:layout_marginBottom="25dp"
+           android:onClick="mail" 
+           />
+
+    </LinearLayout></ScrollView>
+    
+
+</LinearLayout>

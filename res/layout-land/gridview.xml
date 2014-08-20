@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+     >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" >
+
+      <!--    <com.twotoasters.jazzylistview.JazzyListView  -->
+  <!--            app:effect="slide_in"
+            app:max_velocity="0"
+            app:only_animate_fling="false"
+            app:only_animate_new_items="false" />  -->
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:numColumns="3"
+            
+             >
+        </GridView>
+            
+    </FrameLayout>
+
+    
+
+</RelativeLayout>

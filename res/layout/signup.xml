@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f26522"
+     android:gravity="center" >
+
+   <ScrollView
+       
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f26522"
+    android:layout_gravity="center"
+     >
+      <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wyw" 
+        android:layout_gravity="center"/>
+
+       <com.androidbegin.jsonparsetutorial.Coustxt
+            android:id="@+id/textView1"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How shall we call you?" 
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+       
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName" />
+        <Button
+           android:id="@+id/imageView2"
+           android:layout_width="55dp"
+           android:layout_height="55dp"
+           android:background="@drawable/gobutt"
+           android:layout_gravity="center"
+           android:onClick="signin" />
+
+    </LinearLayout></ScrollView>
+    
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+    
+     <com.androidbegin.jsonparsetutorial.TouchImageView
+         android:id="@+id/ImgView"  
+         android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/piza"
+    />
+    
+    <RelativeLayout
+        android:id="@+id/desLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f26522"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/baseline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:orientation="vertical" >
+
+                <com.androidbegin.jsonparsetutorial.Coustxt
+                    android:id="@+id/destxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="44.06"
+                    android:text="A Wonderfull composition by my jaxck \n By Mohankumar"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/commbut"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/commbutt"
+                android:onClick="combut" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
