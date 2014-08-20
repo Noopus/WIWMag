@@ -755,10 +755,6 @@ public class SingleItemView extends Activity {
 			
 			  //   sv.scrollTo(top, top);
 			
-			 Toast.makeText(getApplicationContext(), "Loaded....!!!"
-			 		+ "wow...!!!!",
-	                    Toast.LENGTH_LONG).show();
-			// Pass the results into ListViewAdapter.java
 			
 			 
 				 
