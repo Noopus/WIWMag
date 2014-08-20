@@ -265,8 +265,7 @@ public class SingleItemView extends Activity {
 		
 		
 		
-		  Toast.makeText(con, ""+getResources().getConfiguration().orientation, Toast.LENGTH_SHORT).show();
-		
+		 
 		  
 		  
 		  sv = (ParallaxScrollView) findViewById(R.id.para);
