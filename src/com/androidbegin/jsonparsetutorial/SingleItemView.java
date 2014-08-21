@@ -428,9 +428,9 @@ public class SingleItemView extends Activity {
 		txtrank.setText(Html.fromHtml(rank));
 		txtcountry.setText(Html.fromHtml(country));
 		
+	//	new URLImageParser(comment_content_container, this)
 		
-		
-		txtpopulation.setText(Html.fromHtml(population));
+		txtpopulation.setText(Html.fromHtml(population,new URLImageParser(txtpopulation, this),null));
 		
 		txtpopulation.setMovementMethod(LinkMovementMethod.getInstance());
 		   
@@ -543,6 +543,8 @@ public class SingleItemView extends Activity {
 		
 		
 		
+		 if(Build.VERSION.SDK_INT > Build.VERSION_CODES.ICE_CREAM_SANDWICH){
+				
 		final PopupMenu popupMenu = new PopupMenu(this, options); 
 
 		popupMenu.inflate(R.menu.singleoptins);
@@ -554,7 +556,7 @@ public class SingleItemView extends Activity {
             
               	Intent intent = new Intent(android.content.Intent.ACTION_SEND); 
                intent.setType("text/plain");
-                   intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+                   intent.putExtra(android.content.Intent.EXTRA_SUBJECT, country);
                 
                	String urlToShare = "http://whatyouwantmagazine.com/article.php?nid="+id;
  
@@ -570,7 +572,7 @@ public class SingleItemView extends Activity {
         });
 
      
-     
+		 }
      
 	
 		

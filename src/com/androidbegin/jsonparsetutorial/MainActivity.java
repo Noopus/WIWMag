@@ -568,12 +568,14 @@ String shit;
 		
 	//	jsonobject = JSONfunctions.getJSONfromURL("http://noopus.net/jasontest/count.json");
 		
-				
+	/*			
 			if(carray.get(curpos)==null)
 			{
 				carray.set(curpos, "");
 			}
-			
+		*/
+				
+				
 			if(!home)
 			{
 				jsonobject = JSONfunctions.getJSONfromURL("http://whatyouwantmagazine.com/chat.php?category="+carray.get(curpos)+"&nwno="+nwno);
@@ -1025,7 +1027,7 @@ String shit;
           {
           	
         	  
-        	  Intent in=new Intent(con,submitcontents.class);
+        	  Intent in=new Intent(con,ArticleSubmit.class);
 				  
 		            con.startActivity(in);
 	           
@@ -1042,10 +1044,11 @@ String shit;
 				  
 		  //          con.startActivity(in);
 	        
-          	 Intent in=new Intent(MainActivity.this,Submitphoto.class);
-     		  
-               startActivity(in);
+         	 Intent in=new Intent(MainActivity.this,Submitphoto.class);
+      		  
+             startActivity(in);
 
+	 
 		            
           }
           break;

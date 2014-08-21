@@ -16,7 +16,7 @@ public Newtxt(final Context context) {
     this(context, null);
 
     if (mTypeface == null) {
-        mTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/PT_Sans-Web-Regular.ttf");
+        mTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Light.ttf");
     }
 }
 
@@ -29,7 +29,7 @@ public Newtxt(final Context context, final AttributeSet attrs, final int defStyl
 
     
      if (mTypeface == null) {
-         mTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/PT_Sans-Web-Regular.ttf");
+         mTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Light.ttf");
      }
 
      setTypeface(mTypeface);
