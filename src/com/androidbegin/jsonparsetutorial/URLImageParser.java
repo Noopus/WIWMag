@@ -36,23 +36,35 @@ public URLImageParser(TextView t, Context c) {
     hei=container.getHeight();
 }
 
+
+
 public Drawable getDrawable(String source) {
-    URLDrawable urlDrawable = new URLDrawable();
+
+	
+	URLDrawable urlDrawable = new URLDrawable();
 
     // get the actual source
     ImageGetterAsyncTask asyncTask = 
         new ImageGetterAsyncTask( urlDrawable);
 
+    
     asyncTask.execute(source);
 
+    
     // return reference to URLDrawable where I will change with actual image from
     // the src tag
+    
     return urlDrawable;
+
 }
+
+
+
 
 public class ImageGetterAsyncTask extends AsyncTask<String, Void, Drawable>  {
     URLDrawable urlDrawable;
 
+    
     public ImageGetterAsyncTask(URLDrawable d) {
         this.urlDrawable = d;
     }
@@ -66,12 +78,22 @@ public class ImageGetterAsyncTask extends AsyncTask<String, Void, Drawable>  {
     @Override 
     protected void onPostExecute(Drawable result) { 
         // set the correct bound according to the result from HTTP call 
-         urlDrawable.setBounds(0, 0, 0+result.getIntrinsicWidth(), 0+result.getIntrinsicHeight());  
-
+        
         // change the reference of the current drawable to the result 
         // from the HTTP call 
-        urlDrawable.drawable = result; 
+      
+    	
+    	if(result!=null)
 
+    	{		urlDrawable.drawable = result; 
+
+        
+       urlDrawable.setBounds(
+    		   0, 0, 0+result.getIntrinsicWidth()
+    		   , 0+result.getIntrinsicHeight()+result.getIntrinsicHeight()/2);  
+
+    	
+       
         // redraw the image by invalidating the container 
         URLImageParser.this.container.invalidate();
 
@@ -81,6 +103,11 @@ public class ImageGetterAsyncTask extends AsyncTask<String, Void, Drawable>  {
 
         // Pre ICS
         URLImageParser.this.container.setEllipsize(null);
+        
+    	}
+    	
+    	
+    	
     } 
     /***
      * Get the Drawable from URL
@@ -102,7 +129,7 @@ public class ImageGetterAsyncTask extends AsyncTask<String, Void, Drawable>  {
 
             int nh;
             
-            if(wid>bm.getWidth())
+            if(wid<bm.getWidth())
 		    nh = (int) ( bm.getHeight() * ( bm.getWidth()/wid) );
             else
             	nh = (int) ( bm.getHeight() * (wid / bm.getWidth()) );
@@ -119,10 +146,16 @@ public class ImageGetterAsyncTask extends AsyncTask<String, Void, Drawable>  {
             
             
             drawable.setBounds(0,0,container.getWidth(),(int)(nh*0.8f));
+  
             return drawable;
+        
         } catch (Exception e) {
-            return null;
-        } 
+        
+        	return null;
+        
+        }
+        
+        
     }
 }
 
