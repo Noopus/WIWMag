@@ -357,9 +357,9 @@ public class SingleItemView extends Activity {
 		TextView txtpopulation = (TextView) findViewById(R.id.population);
 		
 		
-		Coustxt author = (Coustxt) findViewById(R.id.author);
+		Newtxt author = (Newtxt) findViewById(R.id.author);
 		
-		final Coustxt lin = (Coustxt) findViewById(R.id.lin);
+		final Newtxt lin = (Newtxt) findViewById(R.id.lin);
 		
 		
 		

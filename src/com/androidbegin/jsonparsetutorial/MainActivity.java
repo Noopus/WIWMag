@@ -447,12 +447,18 @@ public class MainActivity extends Activity  implements SwipeRefreshLayout.OnRefr
 					
 						
 						// adding each child node to HashMap key => value
+						
+						
 						contact.put("category", cate);
+						
 
 						// adding contact to contact list
+						
 						contactList.add(contact);   
 					
-		//			contact.put("category", cate);
+		
+						
+					//contact.put("category", cate);
 
 					
 					
@@ -460,8 +466,24 @@ public class MainActivity extends Activity  implements SwipeRefreshLayout.OnRefr
 		//			contactList.add(contact);
 					
 					
-					carray.add(contact.get("category"));
+		//			carray.add(contact.get("category"));
+			
+						
+					carray.add("Recent");	
 					
+					carray.add("Stories");	
+					
+					carray.add("Startup");	
+					
+					carray.add("Nerdvana");	
+					
+					carray.add("Fotography");	
+					
+					carray.add("Girlthing");	
+					
+					carray.add("Entertainment");	
+					
+						
 					shit=carray.get(0);
 					
 					   size=carray.size();
@@ -576,7 +598,7 @@ String shit;
 		*/
 				
 				
-			if(!home)
+			if(!home&&!carray.get(curpos).equals("Recent"))
 			{
 				jsonobject = JSONfunctions.getJSONfromURL("http://whatyouwantmagazine.com/chat.php?category="+carray.get(curpos)+"&nwno="+nwno);
 				
