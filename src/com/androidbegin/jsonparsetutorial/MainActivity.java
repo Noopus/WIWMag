@@ -357,9 +357,7 @@ public class MainActivity extends Activity  implements SwipeRefreshLayout.OnRefr
 		
 		   size=carray.size();
 
-
-		   
-		   
+   
 		
 		 rbmView = (RibbonMenuView) findViewById(R.id.ribbonMenuView1);
 	     
