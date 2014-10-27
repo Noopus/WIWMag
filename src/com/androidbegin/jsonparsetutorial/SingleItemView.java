@@ -273,7 +273,7 @@ public class SingleItemView extends Activity {
 		  tv = (TextView) findViewById(R.id.header);
 			
 		  
-		  tv.setText(cate);
+		//  tv.setText(cate);
 		  
 		  
 		  if(getResources().getConfiguration().orientation==1){
@@ -522,7 +522,7 @@ public class SingleItemView extends Activity {
 		author.setText(Html.fromHtml(""+auth));
 		else
 		{
-			author.setText(Html.fromHtml("Lusty Prince"));
+	//		author.setText(Html.fromHtml("Lusty Prince"));
 		}
 		}
 

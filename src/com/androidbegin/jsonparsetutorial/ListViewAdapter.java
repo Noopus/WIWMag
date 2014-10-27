@@ -167,7 +167,7 @@ public class ListViewAdapter extends BaseAdapter {
 	
 		population = (Coustxt) itemView.findViewById(R.id.population);
 
-		comments = (Coustxt) itemView.findViewById(R.id.commen);
+//		comments = (Coustxt) itemView.findViewById(R.id.co);
 
 		
 		flag = (ImageView) itemView.findViewById(R.id.flag);

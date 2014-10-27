@@ -44,7 +44,7 @@
 		    android:textColor="#ffffff"
 		    android:textSize="25dp"
 		    android:textStyle="bold"
-		    android:text="Recent" />
+		    android:text="" />
 
 	</RelativeLayout>
   

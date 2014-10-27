@@ -338,6 +338,29 @@ public class MainActivity extends Activity  implements SwipeRefreshLayout.OnRefr
 		carray=new ArrayList<String>();
 		
 		
+		carray.add("Recent");	
+		
+		carray.add("Stories");	
+		
+		carray.add("Startup");	
+		
+		carray.add("Nerdvana");	
+		
+		carray.add("Fotography");	
+		
+		carray.add("Girlthing");	
+		
+		carray.add("Entertainment");	
+		
+			
+		//shit=carray.get(0);
+		
+		   size=carray.size();
+
+
+		   
+		   
+		
 		 rbmView = (RibbonMenuView) findViewById(R.id.ribbonMenuView1);
 	     
 		 
@@ -410,7 +433,8 @@ public class MainActivity extends Activity  implements SwipeRefreshLayout.OnRefr
 			 
 		//	frameAnimation.setVisible(true, true);
 			
-
+			
+		
 		}  
 
 		@Override
@@ -457,39 +481,17 @@ public class MainActivity extends Activity  implements SwipeRefreshLayout.OnRefr
 						contactList.add(contact);   
 					
 		
-						
-					//contact.put("category", cate);
-
+							
 					
-					
-					// adding contact to contact list
-		//			contactList.add(contact);
-					
-					
-		//			carray.add(contact.get("category"));
-			
-						
-					carray.add("Recent");	
-					
-					carray.add("Stories");	
-					
-					carray.add("Startup");	
-					
-					carray.add("Nerdvana");	
-					
-					carray.add("Fotography");	
-					
-					carray.add("Girlthing");	
-					
-					carray.add("Entertainment");	
-					
-						
-					shit=carray.get(0);
-					
-					   size=carray.size();
-				
 					   
 					}
+					
+					
+					
+	                
+					   
+					   
+					   
 					
 				//	shit="jljlkjlj";
 				} catch (JSONException e) {
@@ -513,12 +515,6 @@ String shit;
 	//		if (pDialog.isShowing())
 			 super.onPostExecute(result);
 			 
-			 
-		//	 frameAnimation.setVisible(false, false);
-				
-		//	 frameAnimation.setAlpha(0);
-			 
-	//		Toast.makeText(MainActivity.this, shit, Toast.LENGTH_LONG).show();
 		
 			rbmView.setMenuItems(carray);
 	        
